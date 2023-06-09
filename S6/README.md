@@ -4,8 +4,6 @@ This repository contains the implementation of a simple neural network using Exc
 
 ## Part1 . Neural Networks in Excel
 
-![calculations](images/neural_network.png)
-
 1. Calculate the activations of the hidden layer neurons:
 
     * `h1 = w1\*i1 + w2\*i2`
