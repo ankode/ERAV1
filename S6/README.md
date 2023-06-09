@@ -1,4 +1,4 @@
-# **Session 3**
+# **Session 6**
 This folder contains the implementation of a backpropagation in Excel and neural network implementation in ipynb notebook. These are part of Session 6 Assignment.
 
 
