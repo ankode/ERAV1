@@ -1,8 +1,12 @@
-# Session 3
+# **Session 3**
+This folder contains the implementation of a backpropagation in Excel and neural network implementation in ipynb notebook. These are part of Session 6 Assignment.
 
-This repository contains the implementation of a simple neural network using Excel. The neural network consists of two layers: an input layer and an output layer. In this README, we will go through the steps involved in the calculations and provide the gradient calculations for each weight.
 
-## Part1 . Neural Networks in Excel
+# `Part1:`  Excel sheet showing backpropagation
+
+The neural network consists of two layers: an input layer and an output layer. In this README, we will go through the steps involved in the calculations and provide the gradient calculations for each weight.
+
+![calculations](images/table.png)
 
 1. Calculate the activations of the hidden layer neurons:
 
@@ -63,47 +67,40 @@ This repository contains the implementation of a simple neural network using Exc
 
 ## Results 
 ### 1. lr = 0.1
-**Error**
+**Error chart**
 ![Error lr = 0.1](images/lr_01.png)
 
 ### 2. lr = 0.2
-**Error**
+**Error chart**
 ![Error lr = 0.2](images/lr_02.png)
 
 ### 3. lr = 0.5
-**Error**
+**Error chart**
 ![Error lr = 0.5](images/lr_05.png)
 
 ### 4. lr = 0.8
-**Error**
+**Error chart**
 ![Error lr = 0.8](images/lr_08.png)
 
 ### 5. lr = 1.0
-**Error**
+**Error chart**
 ![Error lr = 1](images/lr_1.png)
 
 ### 6. lr = 2.0
-**Error**
+**Error chart**
 ![Error lr = 2](images/lr_2.png)
 
 
-## Part2
+# `Part2:` Neural Network in Notebook
 
-The task was to create a train a CNN network that can classify MNIST data with the following constraints:
-* 99.4% validation accuracy
-* Less than 20k Parameters
-* You can use anything from above you want. 
-* Less than 20 Epochs
-* No fully connected layer
- 
 
 ## Final Model 
 ![](images/params.png)
 
 ## Parameters
-**19,314**
+Total parameters:  **19,314**
 
 ## Best Test Accuracy
-**99.47%**
-![](images/metrics.png)
+Achieved an accuracy of **99.39%**
+![](images/accuracy.png)
 
