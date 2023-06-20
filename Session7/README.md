@@ -56,12 +56,12 @@ This folder contains 3 python notebook. Each notebook gets model from model.py.
 **Results:**
 ```
 - Parameters: 7,680
-- Best Train Accuracy: 98.91    
-- Best Test Accuracy: 99.43 (7th Epoch)
+- Best Train Accuracy: 98.98
+- Best Test Accuracy: 99.52 (7th Epoch)
 ```
 **Analysis:**
 ```
-1. Consisten 99.4%+ accuracy
+1. Consistent 99.4%+ accuracy with max accuracy 99.52%
 2. Decreasing the number of channels and increasing the layers seems to be good way to make model lighter
 3. Having stepLR with step size 5 to adjust learning rate helps in learning.
 ```
