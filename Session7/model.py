@@ -11,7 +11,7 @@ dropout_value = 0.05
 
 class Model_1(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(Model_1, self).__init__()
         # Input Block
         self.convblock1 = nn.Sequential(
             nn.Conv2d(in_channels=1, out_channels=32, kernel_size=(3, 3), padding=0, bias=False),
@@ -93,7 +93,7 @@ class Model_1(nn.Module):
 
 class Model_2(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(Model_2, self).__init__()
         # Input Block
         self.convblock1 = nn.Sequential(
             nn.Conv2d(in_channels=1, out_channels=16, kernel_size=(3, 3), padding=0, bias=False),
@@ -178,14 +178,14 @@ class Model_2(nn.Module):
 
 class Model_3(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super(Model_3, self).__init__()
         # Input Block
         self.convblock1 = nn.Sequential(
             nn.Conv2d(in_channels=1, out_channels=16, kernel_size=(3, 3), padding=0, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(16),
             nn.Dropout(dropout_value)
-        ) # output_size = 26
+        ) # output_size = 26 , rf 3
 
         # CONVOLUTION BLOCK 1
         self.convblock2 = nn.Sequential(
@@ -193,13 +193,13 @@ class Model_3(nn.Module):
             nn.ReLU(),
             nn.BatchNorm2d(8),
             nn.Dropout(dropout_value)
-        ) # output_size = 24
+        ) # output_size = 24, rf 5
 
         # TRANSITION BLOCK 1
         self.convblock3 = nn.Sequential(
             nn.Conv2d(in_channels=8, out_channels=8, kernel_size=(1, 1), padding=0, bias=False),
-        ) # output_size = 24
-        self.pool1 = nn.MaxPool2d(2, 2) # output_size = 12
+        ) # output_size = 24 rf 7
+        self.pool1 = nn.MaxPool2d(2, 2) # output_size = 12, rf 8
 
         # CONVOLUTION BLOCK 2
         self.convblock4 = nn.Sequential(
@@ -207,13 +207,13 @@ class Model_3(nn.Module):
             nn.ReLU(),
             nn.BatchNorm2d(16),
             nn.Dropout(dropout_value)
-        ) # output_size = 10
+        ) # output_size = 10, rf 12
         self.convblock5 = nn.Sequential(
             nn.Conv2d(in_channels=16, out_channels=16, kernel_size=(3, 3), padding=0, bias=False),
             nn.ReLU(),
             nn.BatchNorm2d(16),
             nn.Dropout(dropout_value)
-        ) # output_size = 8
+        ) # output_size = 8, rf 16
 
 
         self.convblock6 = nn.Sequential(
@@ -221,7 +221,7 @@ class Model_3(nn.Module):
             nn.ReLU(),
             nn.BatchNorm2d(16),
             nn.Dropout(dropout_value)
-        ) # output_size = 6
+        ) # output_size = 6 , rf 20
 
         # OUTPUT BLOCK
         self.gap = nn.Sequential(
@@ -235,7 +235,7 @@ class Model_3(nn.Module):
             # nn.BatchNorm2d(10),
             # nn.ReLU(),
             # nn.Dropout(dropout_value)
-        )
+        ) #rf 28
 
 
         self.dropout = nn.Dropout(dropout_value)
