@@ -18,6 +18,8 @@ Uses Batch Normalisation
 - Best Test Accuracy: 71.35
 ```
 
+**mis-classified  Images**
+![mis-classified image](images/mis_batchnorm.png)
 
 
 ## Model 2
@@ -36,6 +38,10 @@ Uses Group Normalisation
 ```
 
 
+**mis-classified  Images**
+![mis-classified  image](images/mis_groupnorm.png)
+
+
 ## Model 3
 
 **Target:**
@@ -46,6 +52,10 @@ uses Layer Normalisation
 **Results:**
 ```
 - Parameters: 37,576
-- Best Train Accuracy: 72.78
-- Best Test Accuracy: 72.63
+- Best Train Accuracy: 68.57
+- Best Test Accuracy: 68.57
 ```
+
+
+**mis-classified  Images**
+![mis-classified  image](images/mis_layernorm.png)
