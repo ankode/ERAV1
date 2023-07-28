@@ -1,21 +1,29 @@
-# ERAV1 SESSION 10 ASSIGNMENT
+# ERAV1 SESSION 11 ASSIGNMENT
 
-This folder contains 3 python notebook. Notebook uses albumenations data augmentation library to transform image.
+This folder contains 3 python notebook. Notebook uses albumenations data augmentation library to transform image and ResNet18 to train on CIFAR10 for 20 epochs
 
 
 
  
-## Model
+**Model**
+
+ResNet18
+
 
 **Target:** 
-```
-Use Data Augmentation along with Dilated Kernels and Depthwise Separable Convolution.
-```
 
-**Results:**
-```
+Use GradCam on the misclassified images
 
-```
+
+**Mis Classified Results:**
+
+![Misclassified](images/misclassified.png)
+
+
+**Grad Cam Results:**
+
+![Gradcam](images/gradcam.png)
+
 
 **Model Parameters**
 
