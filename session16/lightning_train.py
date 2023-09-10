@@ -6,7 +6,7 @@ from pytorch_lightning.loggers.tensorboard import TensorBoardLogger
 from pytorch_lightning.callbacks.progress import TQDMProgressBar
 from pytorch_lightning.callbacks import Callback
 import torchmetrics
-from .config import get_weights_file_path
+from config import get_weights_file_path
 #from config import get_weights_file_path
 import pytorch_lightning as pl
 
@@ -62,11 +62,11 @@ def train_transformer(model, datamodule, config, ckpt_path=None, epochs=2):
     trainer = Trainer(
         enable_checkpointing=True,
         max_epochs=epochs,
-        accelerator="auto",
+        accelerator="gpu",
         #accelerator=None,
         devices=1 if torch.cuda.is_available() else None,
         #logger=CSVLogger(save_dir="logs/"),
-        logger=TensorBoardLogger(save_dir=config["rundir"], name=config["experiment_name"], default_hp_metric=False),
+        # logger=TensorBoardLogger(save_dir=config["rundir"], name=config["experiment_name"], default_hp_metric=False),
         callbacks=[LearningRateMonitor(logging_interval="step"),
                    TQDMProgressBar(refresh_rate=10),
                    #RichProgressBar(refresh_rate=10, leave=True),
