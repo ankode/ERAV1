@@ -13,14 +13,24 @@ Train a UNet architecture with different variations and report the results.
 3. UNet with StrConv+Tr+BCE Loss
 4. UNet with StrConv+Ups+Dice Loss
 
+### Files
+- [**Unet Notebook**](./Unet/UNet.ipynb)
+
 ## Task 2: Variation of a VAE
 
 ### Objective
 Design a variation of a VAE and share results for MNIST and CIFAR10 datasets.
 
+
+## Files
+- [**VAE MNIST Notebook**](./VAE/S18_VAE_MNIST.ipynb)
+- [**VAE CIFAR10 Notebook**](./VAE/S18_VAE_CIFAR10.ipynb)
+
 ## Results
 1. **MNIST Outputs**:
+
    ![MNIST Outputs](images/s18_VAE_MNIST.png)
 
 2. **CIFAR Outputs**:
+
    ![CIFAR Outputs](images/s18_VAE_CIFAR10.png)
